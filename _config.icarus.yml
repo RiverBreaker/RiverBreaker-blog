@@ -12,17 +12,17 @@ head:
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Name of the web application (default to the site title)
-        name: 
+        name: RiverBreaker's blog
         # The displayed name of the web application
         # when there is not enough space to display full name
-        short_name: 
+        short_name: RiverBreaker
         # The start URL of the web application
         start_url: 
         # The default theme color for the application
-        theme_color: 
+        theme_color: '#1E1E1E'
         # A placeholder background color for the application page to display
         # before its stylesheet is loaded
-        background_color: 
+        background_color: '#252526'
         # The preferred display mode for the website
         display: standalone
         # Image files that can serve as application icons for different contexts
@@ -97,8 +97,8 @@ head:
     # Additional HTML meta tags in an array
     meta:
         # Meta tag specified in <attribute>=<value> style
-        # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
-        - ''
+        # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="123456">
+        - 'name=theme-color;content=#123456'
     # URL or path to the website's RSS atom.xml
     rss: 
 # Page top navigation bar configurations
@@ -114,11 +114,11 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/RiverBreaker/RiverBreaker-blog
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2024
+    copyright: © 2024 RiverBreaker ❄️
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
@@ -159,15 +159,27 @@ article:
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
-    type: insight
+    type: baidu
     # Whether to include pages in the search results
-    index_pages: true
+    # index_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
-    type: disqus
-    # Disqus shortname
-    shortname: ''
+    type: gitalk
+    client_id: Ov23liifh7QhDzZDzWm0
+    client_secret: 9ebd89ad02c6a87ea6ae8b0036ded99acb04ebab
+    repo: Hexo
+    owner: RiverBreaker
+    admin:
+        - RiverBreaker
+    per_page: 15                    # 可选填
+    distraction_free_mode: false    # 可选填
+    pager_direction: last           # 可选填
+    create_issue_manually: false    # 可选填
+    proxy:                          # 可选填
+    flip_move_options:              # 可选填
+    enable_hotkey: true             # 可选填
+    language: zh-CN                 # 可选填
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -175,40 +187,40 @@ donates:
     -
         type: afdian
         # URL to the "Afdian.net" personal page
-        url: ''
+        url: 'https://afdian.net/u/5247e1a42ec011efb6055254001e7c00'
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
-        qrcode: ''
+        qrcode: '/images/alipay.jpg'
     # "Buy me a coffee" donate button configurations
     -
         type: buymeacoffee
         # URL to the "Buy me a coffee" page
-        url: ''
+        url: 'https://www.buymeacoffee.com/xiamu'
     # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
+    # -
+    #     type: patreon
+    #     # URL to the Patreon page
+    #     url: ''
     # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
+    # -
+    #     type: paypal
+    #     # Paypal business ID or email address
+    #     business: ''
+    #     # Currency code
+    #     currency_code: USD
     # Wechat donate button configurations
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+        qrcode: '/images/wechat.png'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
-    type: sharethis
+    type: addtoany
     # URL to the ShareThis share plugin script
-    install_url: ''
+    # install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -231,9 +243,9 @@ widgets:
         # Author name
         author: RiverBreaker
         # Author title
-        author_title: Your title
+        author_title: Student Developer
         # Author's current location
-        # location: Your location
+        location: Earth, Solar System
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
@@ -243,24 +255,24 @@ widgets:
         # URL or path for the follow button
         follow_link: https://github.com/RiverBreaker
         # Links to be shown on the bottom of the profile widget
-        # social_links:
-        #     Github:
-        #         icon: fab fa-github
-        #         url: https://github.com/ppoffice
-        #     Facebook:
-        #         icon: fab fa-facebook
-        #         url: https://facebook.com
-        #     Twitter:
-        #         icon: fab fa-twitter
-        #         url: https://twitter.com
-        #     Dribbble:
-        #         icon: fab fa-dribbble
-        #         url: https://dribbble.com
-        #     RSS:
-        #         icon: fas fa-rss
-        #         url: /
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: https://github.com/RiverBreaker
+            Facebook:
+                icon: fab fa-facebook
+                url: https://facebook.com
+            Twitter:
+                icon: fab fa-twitter
+                url: https://twitter.com
+            Dribbble:
+                icon: fab fa-dribbble
+                url: https://dribbble.com
+            RSS:
+                icon: fas fa-rss
+                url: /
     # Table of contents widget configurations
-    -
+    # -
     #     # Where should the widget be placed, left sidebar or right sidebar
     #     position: left
     #     type: toc
@@ -270,15 +282,15 @@ widgets:
     #     collapsed: true
     #     # Maximum level of headings to show (1-6)
     #     depth: 3
-    # # Recommendation links widget configurations
+    # Recommendation links widget configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
-    #     # position: left
-    #     # type: links
-    #     # # Names and URLs of the sites
-    #     # links:
-    #     #     Hexo: https://hexo.io
-    #     #     Bulma: https://bulma.io
+    #     position: right
+    #     type: links
+    #     # Names and URLs of the sites
+    #     links:
+    #         Hexo: https://hexo.io
+    #         Bulma: https://bulma.io
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -287,12 +299,12 @@ widgets:
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
     # Archives widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: archives
     # Tags widget configurations
     -
@@ -305,7 +317,7 @@ widgets:
         amount: 
         # Whether to show tags count, i.e. number of posts in the tag.
         show_count: true
-    # # Google FeedBurner email subscription widget configurations
+    # Google FeedBurner email subscription widget configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
     #     position: left
@@ -314,7 +326,7 @@ widgets:
     #     description: 
     #     # Feedburner ID
     #     feedburner_id: ''
-    # # Google AdSense unit configurations
+    # Google AdSense unit configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
     #     position: left
@@ -323,7 +335,7 @@ widgets:
     #     client_id: ''
     #     # AdSense AD unit ID
     #     slot_id: ''
-    # # Follow.it email subscription widget configurations
+    # Follow.it email subscription widget configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
     #     position: left
@@ -353,7 +365,7 @@ plugins:
         tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: false
+    busuanzi: true
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:
