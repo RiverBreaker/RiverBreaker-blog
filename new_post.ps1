@@ -57,3 +57,6 @@ if (Test-Path -Path $resourceFolder) {
 Write-Output "Post created and organized: $newMdFile"
 Write-Output "Cover image: $cover"
 Write-Output "Thumbnail image: $thumbnail"
+
+
+# 

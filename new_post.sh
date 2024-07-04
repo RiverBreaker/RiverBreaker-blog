@@ -54,3 +54,5 @@ fi
 echo "Post created and organized: $newFile"
 echo "Cover image: $cover"
 echo "Thumbnail image: $thumbnail"
+
+# 

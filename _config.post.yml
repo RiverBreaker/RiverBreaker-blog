@@ -10,7 +10,7 @@ widgets:
     position: right
     type: profile
     # Author name
-    author: Xiamu
+    author: RiverBreaker
   -
     # Where should the widget be placed, left sidebar or right sidebar
     position: right
@@ -21,3 +21,5 @@ widgets:
     collapsed: false
     # Maximum level of headings to show (1-6)
     depth: 2
+
+    # 
