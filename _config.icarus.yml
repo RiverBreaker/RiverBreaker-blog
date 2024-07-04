@@ -233,7 +233,7 @@ widgets:
         # Author title
         author_title: Your title
         # Author's current location
-        location: Your location
+        # location: Your location
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
