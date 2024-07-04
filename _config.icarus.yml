@@ -185,9 +185,9 @@ comment:
 donates:
     # "Afdian.net" donate button configurations
     -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: 'https://afdian.net/u/5247e1a42ec011efb6055254001e7c00'
+        # type: afdian
+        # # URL to the "Afdian.net" personal page
+        # url: 'https://afdian.net/u/5247e1a42ec011efb6055254001e7c00'
     # Alipay donate button configurations
     -
         type: alipay
