@@ -245,7 +245,7 @@ widgets:
         # Author title
         author_title: Student Developer
         # Author's current location
-        location: Earth, Solar System
+        # location: Earth, Solar System
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
