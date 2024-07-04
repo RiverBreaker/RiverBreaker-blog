@@ -169,11 +169,11 @@ search:
 comment:
     type: gitalk
     # Gitalk客户端ID，通常由GitHub提供
-    client_id: Ov23liifh7QhDzZDzWm0
+    client_id: Ov23liLgtOgDzBQq4QsP
     # Gitalk客户端密钥，通常由GitHub提供
-    client_secret: 9ebd89ad02c6a87ea6ae8b0036ded99acb04ebab
+    client_secret: 52964a2b09977cc3f6b4dfdf6e09c5d700b1abf4
     # GitHub仓库名称，用于存放评论
-    repo: Hexo
+    repo: RiverBreaker-blog
     # GitHub仓库的所有者，通常是您的GitHub用户名
     owner: RiverBreaker
     # GitHub仓库的管理员列表，您可以指定多个管理员
