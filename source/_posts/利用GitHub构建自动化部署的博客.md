@@ -1,12 +1,12 @@
 ---
 title: 利用GitHub构建自动化部署的博客
 comments: true
-cover: COVER_PLACEHOLDER
-thumbnail: THUMBNAIL_PLACEHOLDER
+cover: 
+thumbnail: 
 tags:
-  - 未分类
+  - 博客搭建教程
 categories:
-  - 未分类
+  - 教程
 date: 2024-07-05 00:29:31
 description:
 ---
