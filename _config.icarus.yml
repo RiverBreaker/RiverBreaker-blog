@@ -182,39 +182,43 @@ comment:
     language: zh-CN                 # 可选填
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-    # "Afdian.net" donate button configurations
-    -
-        # type: afdian
-        # # URL to the "Afdian.net" personal page
-        # url: 'https://afdian.net/u/5247e1a42ec011efb6055254001e7c00'
-    # Alipay donate button configurations
-    -
-        type: alipay
-        # Alipay qrcode image URL
-        qrcode: '/images/alipay.jpg'
-    # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: 'https://www.buymeacoffee.com/xiamu'
-    # Patreon donate button configurations
-    # -
-    #     type: patreon
-    #     # URL to the Patreon page
-    #     url: ''
-    # Paypal donate button configurations
-    # -
-    #     type: paypal
-    #     # Paypal business ID or email address
-    #     business: ''
-    #     # Currency code
-    #     currency_code: USD
-    # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: '/images/wechat.png'
+# donates:
+#     # "Afdian.net" donate button configurations
+#     -
+#         # 爱发电链接
+#         # type: afdian
+#         # # URL to the "Afdian.net" personal page
+#         # url: 'https://afdian.net/u/5247e1a42ec011efb6055254001e7c00'
+#     # Alipay donate button configurations
+#     -
+#         # 支付宝收款码
+#         type: alipay
+#         # Alipay qrcode image URL
+#         qrcode: '/images/alipay.jpg'
+#     # "Buy me a coffee" donate button configurations
+#     -
+#         # 为我买杯咖啡
+#         type: buymeacoffee
+#         # URL to the "Buy me a coffee" page
+#         url: 'https://www.buymeacoffee.com/xiamu'
+#     # Patreon donate button configurations
+#     # -
+#     #     type: patreon
+#     #     # URL to the Patreon page
+#     #     url: ''
+#     # Paypal donate button configurations
+#     # -
+#     #     type: paypal
+#     #     # Paypal business ID or email address
+#     #     business: ''
+#     #     # Currency code
+#     #     currency_code: USD
+#     # Wechat donate button configurations
+#     -
+#         # 微信
+#         type: wechat
+#         # Wechat qrcode image URL
+#         qrcode: '/images/wechat.png'
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
