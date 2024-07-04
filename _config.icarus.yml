@@ -158,27 +158,42 @@ article:
             url: https://creativecommons.org/licenses/by-nc/4.0/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+# 搜索引擎：
 search:
-    type: baidu
+    type: bing
     # Whether to include pages in the search results
     # index_pages: true
 # Comment plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+# 评论功能：
 comment:
     type: gitalk
+    # Gitalk客户端ID，通常由GitHub提供
     client_id: Ov23liifh7QhDzZDzWm0
+    # Gitalk客户端密钥，通常由GitHub提供
     client_secret: 9ebd89ad02c6a87ea6ae8b0036ded99acb04ebab
+    # GitHub仓库名称，用于存放评论
     repo: Hexo
+    # GitHub仓库的所有者，通常是您的GitHub用户名
     owner: RiverBreaker
+    # GitHub仓库的管理员列表，您可以指定多个管理员
     admin:
         - RiverBreaker
+    # 每页显示的评论数量，默认为15
     per_page: 15                    # 可选填
+    # 是否启用无干扰模式，默认为false
     distraction_free_mode: false    # 可选填
+    # 评论分页的方向，默认为last（最后）
     pager_direction: last           # 可选填
+    # 是否手动创建Issue，默认为false
     create_issue_manually: false    # 可选填
+    # 代理设置，可选填
     proxy:                          # 可选填
+    # 翻页动画选项，可选填
     flip_move_options:              # 可选填
+    # 是否启用快捷键，默认为true
     enable_hotkey: true             # 可选填
+    # 语言设置，默认为zh-CN（简体中文）
     language: zh-CN                 # 可选填
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
@@ -224,41 +239,55 @@ comment:
 share:
     type: addtoany
     # URL to the ShareThis share plugin script
+    # 分享插件的安装URL，通常为空
     # install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
     # Left sidebar configurations
     left:
+        # 左侧侧边栏是否固定在顶部，true为固定，false为不固定
         # Whether the sidebar sticks to the top when page scrolls
         sticky: false
     # Right sidebar configurations
     right:
+        # 右侧侧边栏是否固定在顶部，true为固定，false为不固定
         # Whether the sidebar sticks to the top when page scrolls
         sticky: false
 # Sidebar widget configurations
 # http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
 widgets:
     # Profile widget configurations
+    # 个人资料小工具配置
     -
         # Where should the widget be placed, left sidebar or right sidebar
+        # 小工具应放置的位置，左侧边栏或右侧边栏
         position: left
+        # 小工具的类型，这里为个人资料
         type: profile
         # Author name
+        # 作者姓名
         author: RiverBreaker
         # Author title
+        # 作者头衔
         author_title: Student Developer
         # Author's current location
-        # location: Earth, Solar System
+        # 作者的当前所在地
+        ### location: Earth, Solar System ####
         # URL or path to the avatar image
+        # 头像图片的URL或路径
         avatar: 
         # Whether show the rounded avatar image
+        # 是否显示圆形头像
         avatar_rounded: false
         # Email address for the Gravatar
+        # Gravatar的电子邮件地址
         gravatar: 
         # URL or path for the follow button
+        # 关注按钮的URL或路径
         follow_link: https://github.com/RiverBreaker
         # Links to be shown on the bottom of the profile widget
+        # 个人资料小工具底部显示的社交链接
         social_links:
             Github:
                 icon: fab fa-github
@@ -278,161 +307,225 @@ widgets:
     # Table of contents widget configurations
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
-    #     position: left
-    #     type: toc
+    #     # 小工具应放置的位置，左侧边栏或右侧边栏
+    #     position: left  ## 代码
+    #     type: toc  ## 代码
     #     # Whether to show the index of each heading
-    #     index: true
+    #     # 是否显示每个标题的索引
+    #     index: true  ## 代码
     #     # Whether to collapse sub-headings when they are out-of-view
-    #     collapsed: true
-    #     # Maximum level of headings to show (1-6)
-    #     depth: 3
+    #     # 当子标题超出视图时是否折叠
+    #     collapsed: true  ## 代码
+    #     # Maximum level of headings to show (1-6)  
+    #     # 显示的最大标题级别（1-6）
+    #     depth: 3  ## 代码
     # Recommendation links widget configurations
+    # 推荐链接小工具配置
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
-    #     position: right
-    #     type: links
+    #     # 小工具应放置的位置，左侧边栏或右侧边栏
+    #     position: right  ## 代码
+    #     type: links  ## 代码
     #     # Names and URLs of the sites
-    #     links:
-    #         Hexo: https://hexo.io
-    #         Bulma: https://bulma.io
+    #     # 站点名称和URL
+    #     links:  ## 代码
+    #         Hexo: https://hexo.io  ## 代码
+    #         Bulma: https://bulma.io  ## 代码
     # Categories widget configurations
+    # 分类小工具配置
     -
         # Where should the widget be placed, left sidebar or right sidebar
+        # 小工具应放置的位置，左侧边栏或右侧边栏
         position: left
         type: categories
     # Recent posts widget configurations
+    # 最新文章小工具配置
     -
         # Where should the widget be placed, left sidebar or right sidebar
+        # 小工具应放置的位置，左侧边栏或右侧边栏
         position: right
         type: recent_posts
     # Archives widget configurations
+    # 归档小工具配置
     -
         # Where should the widget be placed, left sidebar or right sidebar
+        # 小工具应放置的位置，左侧边栏或右侧边栏
         position: right
         type: archives
     # Tags widget configurations
+    # 标签小工具配置
     -
         # Where should the widget be placed, left sidebar or right sidebar
+        # 小工具应放置的位置，左侧边栏或右侧边栏
         position: left
         type: tags
         # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
+        # 标签排序方式。例如'name'按名称升序排序，'-length'按每个标签的文章数量降序排序
         order_by: name
         # Amount of tags to show. Will show all if not set.
+        # 显示的标签数量。如果未设置，将显示所有标签。
         amount: 
         # Whether to show tags count, i.e. number of posts in the tag.
+        # 是否显示标签计数，即标签中的文章数量。
         show_count: true
     # Google FeedBurner email subscription widget configurations
+    # Google FeedBurner电子邮件订阅小工具配置
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
-    #     position: left
-    #     type: subscribe_email
+    #     # 小工具应放置的位置，左侧边栏或右侧边栏
+    #     position: left  ## 代码
+    #     type: subscribe_email  ## 代码
     #     # Hint text under the email input
-    #     description: 
-    #     # Feedburner ID
-    #     feedburner_id: ''
+    #     # 电子邮件输入框下的提示文本
+    #     description:   ## 代码
+    #     # Feedburner ID  ## 代码
+    #     feedburner_id: ''  ## 代码
     # Google AdSense unit configurations
+    # Google AdSense单元配置
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
-    #     position: left
-    #     type: adsense
+    #     # 小工具应放置的位置，左侧边栏或右侧边栏
+    #     position: left  ## 代码
+    #     type: adsense  ## 代码
     #     # AdSense client ID
-    #     client_id: ''
+    #     client_id: ''  ## 代码
     #     # AdSense AD unit ID
-    #     slot_id: ''
+    #     slot_id: ''  ## 代码
     # Follow.it email subscription widget configurations
+    # Follow.it电子邮件订阅小工具配置
     # -
     #     # Where should the widget be placed, left sidebar or right sidebar
-    #     position: left
-    #     type: followit
+    #     # 小工具应放置的位置，左侧边栏或右侧边栏
+    #     position: left  ## 代码
+    #     type: followit  ## 代码
     #     # Hint text under the email input
-    #     description: 
+    #     # 电子邮件输入框下的提示文本
+    #     description:   ## 代码
     #     # Subscription form action URL
-    #     action_url: ''
+    #     # 订阅表单的Action URL
+    #     # # action_url: ''   ## 代码
     #     # Feed claiming verification code
-    #     verification_code: ''
+    #     # Feed claiming验证码
+    #     # # verification_code: ''  ## 代码
 # Plugin configurations
+# 插件配置
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
     # Enable page startup animations
+    # 启用页面启动动画
     animejs: true
     # Show the "back to top" button
+    # 显示“返回顶部”按钮
     back_to_top: true
     # Baidu Analytics plugin settings
+    # 百度分析插件设置
     # https://tongji.baidu.com
     baidu_analytics:
         # Baidu Analytics tracking ID
+        # 百度分析跟踪ID
         tracking_id: 
     # Bing Webmaster Tools plugin settings
+    # 必应网站管理员工具插件设置
     # https://www.bing.com/toolbox/webmaster/
     bing_webmaster:
         # Bing Webmaster Tools tracking ID in the <meta> tag
+        # 必应网站管理员工具跟踪ID，用于<meta>标签
         tracking_id: 
     # BuSuanZi site/page view counter
+    # 布算子网站/页面浏览计数器
     # https://busuanzi.ibruce.info
     busuanzi: true
     # CNZZ statistics
+    # CNZZ统计
     # https://www.umeng.com/web
     cnzz:
         # CNZZ tracker id
+        # CNZZ跟踪器ID
         id: 
         # CNZZ website id
+        # CNZZ网站ID
         web_id: 
     # Alerting users about the use of cookies
+    # 向用户通知使用cookies的插件
     # https://www.osano.com/cookieconsent/
     cookie_consent:
         # The compliance type. Can be "info", "opt-in", or "opt-out"
+        # 合规类型。可以是"info"、"opt-in"或"opt-out"
         type: info
         # Theme of the popup. Can be "block", "edgeless", or "classic"
+        # 弹出窗口的主题。可以是"block"、"edgeless"或"classic"
         theme: edgeless
         # Whether the popup should stay static regardless of the page scrolls
+        # 弹出窗口是否应保持静态，无论页面滚动与否
         static: false
         # Where on the screen the consent popup should display
+        # 弹出窗口在屏幕上的位置
         position: bottom-left
         # URL to your site's cookie policy
+        # 网站cookie政策的URL
         policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
+    # 启用lightGallery和Justified Gallery插件
     gallery: true
     # Google Analytics plugin settings
+    # Google Analytics插件设置
     # https://analytics.google.com
     google_analytics:
         # Google Analytics tracking ID
+        # Google Analytics跟踪ID
         tracking_id: 
     # Hotjar user feedback plugin
+    # Hotjar用户反馈插件
     # https://www.hotjar.com/
     hotjar:
         # Hotjar site id
+        # Hotjar网站ID
         site_id: 
     # Enable the KaTeX math typesetting support
+    # 启用KaTeX数学排版支持
     # https://katex.org/
     katex: false
     # Enable the MathJax math typesetting support
+    # 启用MathJax数学排版支持
     # https://www.mathjax.org/
     mathjax: false
     # Enable the Outdated Browser plugin
+    # 启用Outdated Browser插件
     # http://outdatedbrowser.com/
     outdated_browser: false
     # Enable PJAX
+    # 启用PJAX
     pjax: true
     # Show a progress bar at top of the page on page loading
+    # 页面加载时在页面顶部显示进度条
     progressbar: true
     # Statcounter statistics
+    # Statcounter统计
     # https://statcounter.com/
     statcounter:
         # Statcounter project id
+        # Statcounter项目ID
         project: 
         # Statcounter project security code
+        # Statcounter项目安全代码
         security: 
     # Twitter conversion tracking plugin settings
+    # Twitter转化跟踪插件设置
     # https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html
     twitter_conversion_tracking:
         # Twitter Pixel ID
+        # Twitter像素ID
         pixel_id: 
 # CDN provider settings
+# CDN提供商设置
 # https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
 providers:
     # Name or URL template of the JavaScript and/or stylesheet CDN provider
+    # JavaScript和/或样式表CDN提供商的名称或URL模板
     cdn: jsdelivr
     # Name or URL template of the webfont CDN provider
+    # Web字体CDN提供商的名称或URL模板
     fontcdn: google
     # Name or URL of the fontawesome icon font CDN provider
+    # FontAwesome图标字体CDN提供商的名称或URL
     iconcdn: fontawesome
